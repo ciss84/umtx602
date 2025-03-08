@@ -1,21 +1,18 @@
-<html manifest="cache.appcache">
+<html>
 <!-- <html manifest="cache.appcache"> -->
 
 <head>
-    <meta charset="UTF-8">
-    <title> PS5 UMTX Jailbreak  </title>
+    <title>PS5 UMTX Jailbreak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-
 </head>
 
 <!-- body is set up as three rows: auto 1fr auto -->
 <body>
     <!-- Row 1 -->
-	<title></title>
     <div class="p-2">
         <h1 class="text-center">PS5 UMTX Jailbreak (1.xx-5.xx)</h1>
-        <h3><p class="text-center" id="top-bar-text">  Current firmware: <span class="fw-bold" id="current-fw"></span></p>  </h3>
+        <p class="text-center" id="top-bar-text">Current firmware: <span class="fw-bold" id="current-fw"></span></p>
 
         <!-- This is absolute positioned to the body-->
         <div id="toast-container"></div>
@@ -24,8 +21,8 @@
     <!-- Row 2 -->
     <div id="main-content">
         <div id="pre-jb-view" class="d-flex align-items-center justify-content-center flex-direction-column selected">
-            <a tabindex="0" class="btn fw-bold" id="run-jb" onclick="run()"><img src="img/01.png" width="64" height="64" alt=""><br>Jailbreak</a>
-            <a tabindex="0" class="btn" style="padding: 0.5rem 2rem; font-size: 1rem;" id="run-wk-only" onclick="run(true)"><img src="img/02.png" width="64" height="64" alt=""><br>Webkit-only (sender)</a>
+            <a tabindex="0" class="btn fw-bold" id="run-jb" onclick="run()">Jailbreak</a>
+            <a tabindex="0" class="btn" style="padding: 0.5rem 2rem; font-size: 1rem;" id="run-wk-only" onclick="run(true)">Webkit-only (sender)</a>
         </div>
 
         <div id="console-view">
@@ -61,10 +58,11 @@
             <span class="ml-2">Redirect</span>
         </div>
     </div>
+
     <script src="int64.js"></script>
     <script src="rop.js"></script>
     <script src="exploit.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="custom_host_stuff.js"></script>
+    <script src="custom_host_stuff.js"></script>
     <script src="webkit_fontface.js"></script>
     <script type="module" src="psfree/psfree.mjs"></script>
     <script src="payload_map.js"></script>
