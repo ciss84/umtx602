@@ -527,7 +527,7 @@ async function run() {
             return new int64(res.low, res.high);
         }
     };          
-    run_hax();
+    //run_hax();
 
 }
 setTimeout(run, 1500);
