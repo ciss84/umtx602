@@ -530,4 +530,4 @@ async function run() {
     //run_hax();
 
 }
-setTimeout(run, 1500);
+//setTimeout(run, 1500);
