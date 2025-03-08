@@ -690,7 +690,7 @@ async function make_arw(reader, view2, pop) {
     make_arw._buffer = bt.buffer;
 }
 
-window.run_psfree = async function(target) {
+window.run = async function(target) {
     // if target is a string formatted like "4.03" then convert to 0x10403
     if (typeof target === 'string') {
         target = parseInt(target.replace('.', ''), 16) | 0x10000;
