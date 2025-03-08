@@ -892,4 +892,3 @@ window.run_psfree = async function(target) {
 
     window.p = prim;
 }
-setTimeout(run, 1500);
